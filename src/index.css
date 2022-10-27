@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    height: auto;
+    background-size: contain;
+    background-repeat: repeat-y;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.inputSection{
+    width: 30%;
+}
+.main{
+  width: 70%;
+}
+
+.amount{
+    width: 29vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+}
+.task{
+    display: flex;
+    justify-content: space-between;
+}
+.inc{
+    background-color: #0D6EFd;
+    color: white;
+    padding: 1%;
+}
+.outc{
+    background-color: gray;
+    color: white;
+    padding: 1%;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+      background-color: rgb(248, 249, 249);
+    }
+    .hero{
+        display: none;
+    }
+    .inputSection{
+        width: 100%;
+    }
+    .main, .amount{
+      width: 100%;
+    }
+    
+  }
